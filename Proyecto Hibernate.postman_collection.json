@@ -1,0 +1,579 @@
+{
+	"info": {
+		"_postman_id": "79482df5-3dc8-40b1-8e66-26cb7b8c7972",
+		"name": "Proyecto Hibernate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "/api/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users/username/Usuario2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/username/Usuario2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"username",
+								"Usuario2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users/userlastname/Apellido1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/userlastname/Apellido1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"userlastname",
+								"Apellido1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"UsuarioNuevo\",\r\n    \"userlastname\": \"ApellidoNuevo\",\r\n    \"dni\": \"10111222A\",\r\n    \"active\": true,\r\n    \"birthday\": \"2021-07-11\",\r\n    \"billinginfo\": {\r\n        \"id\": 5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/users",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"username\": \"UsuarioUpdate\",\r\n        \"userlastname\": \"ApellidoUpdate\",\r\n        \"dni\": \"10111222A\",\r\n        \"active\": true,\r\n        \"birthday\": \"2021-07-11\",\r\n        \"billinginfo\": {\r\n            \"id\": 1,\r\n            \"fullname\": \"NombreCompleto1\",\r\n            \"address\": \"Direccion1\",\r\n            \"phonenumber\": \"900111222\",\r\n            \"dni\": \"50111222A\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "/api/tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tasks/4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tasks/title/Tarea3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/title/Tarea3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"title",
+								"Tarea3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tasks/description/Descripcion2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tasks/description/Descripcion2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"description",
+								"Descripcion2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tasks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"TareaNueva\",\r\n    \"description\": \"DescripcionNueva\",\r\n    \"finished\": true,\r\n    \"deliverydate\": \"2020-07-05\",\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"username\": \"UsuarioUpdate\",\r\n        \"userlastname\": \"ApellidoUpdate\",\r\n        \"dni\": \"10111222A\",\r\n        \"active\": true,\r\n        \"birthday\": \"2021-07-11\",\r\n        \"billinginfo\": {\r\n            \"id\": 1,\r\n            \"fullname\": \"NombreCompleto1\",\r\n            \"address\": \"Direccion1\",\r\n            \"phonenumber\": \"900111222\",\r\n            \"dni\": \"50111222A\"\r\n        }\r\n    },\r\n    \"tags\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tasks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"TareaUpdate\",\r\n    \"description\": \"DescripcionUpdate\",\r\n    \"finished\": true,\r\n    \"deliverydate\": \"2020-07-05\",\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"username\": \"UsuarioUpdate\",\r\n        \"userlastname\": \"ApellidoUpdate\",\r\n        \"dni\": \"10111222A\",\r\n        \"active\": true,\r\n        \"birthday\": \"2021-07-11\"\r\n    },\r\n    \"tags\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "/api/tags",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tags/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tags/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tags",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tags/tagname/Tag1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/tags/tagname/Tag1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tags",
+								"tagname",
+								"Tag1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"tagname\": \"TagNueva\",\r\n        \"color\": \"RED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/tags",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"tagname\": \"TagUpdate\",\r\n        \"color\": \"GREEN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Billings Info",
+			"item": [
+				{
+					"name": "/api/billings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/billings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"billings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/billings/4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/billings/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"billings",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/billings/fullname/NombreCompleto2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/billings/fullname/NombreCompleto2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"billings",
+								"fullname",
+								"NombreCompleto2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/billings/address/Direccion3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/billings/address/Direccion3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"billings",
+								"address",
+								"Direccion3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/billings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullname\": \"NombreCompletoNuevo\",\r\n    \"address\": \"DireccionNueva\",\r\n    \"phonenumber\": \"900111222\",\r\n    \"dni\": \"50111222A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/billings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"billings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/billings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"fullname\": \"NombreCompletoUpdate\",\r\n        \"address\": \"DireccionUpdate\",\r\n        \"phonenumber\": \"900111222\",\r\n        \"dni\": \"50111222A\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/billings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"billings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
